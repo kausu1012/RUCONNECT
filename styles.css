@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161b22;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #58a6ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e6edf3;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #58a6ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #58a6ff;
+  color: #0d1117;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.product-card {
+  background-color: #161b22;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #58a6ff;
+}
+
+.footer {
+  background-color: #0d1117;
+  padding: 2rem;
+  color: #8b949e;
+  text-align: center;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-cols div {
+  min-width: 150px;
+}
+
+.footer-cols h4 {
+  color: #e6edf3;
+  margin-bottom: 0.5rem;
+}
+
+.footer-cols a {
+  display: block;
+  color: #8b949e;
+  text-decoration: none;
+  margin: 0.25rem 0;
+}
+
+.footer-cols a:hover {
+  color: #58a6ff;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+  }
+}
